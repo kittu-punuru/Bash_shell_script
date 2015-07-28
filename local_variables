@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# script for local variables
+
+foo=0 #global variable
+
+fun1 () {
+    local foo
+    foo=1 #variable foo local to function1
+    echo "fun1: foo=$foo"
+}
+fun2 () {
+    local foo
+    foo=2
+    echo "fun2: foo=$foo"
+}
+echo "global: foo=$foo"
+fun1
+echo "global: foo=$foo"
+fun2
+echo "global: foo=$foo"
