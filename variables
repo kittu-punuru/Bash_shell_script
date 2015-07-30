@@ -1,0 +1,13 @@
+#!/bin/bash
+#system information report
+title="system information report of $HOSTNAME"
+current_time=$(date +"%x %r %z")
+timestamp="generated $current_time, by $USER"
+echo "<html>
+       <head>
+         <title>$title</title>
+       </head>
+        <body>
+       <h1>$title</h1><P>$timestamp</P>
+       </body>
+ </html>"       

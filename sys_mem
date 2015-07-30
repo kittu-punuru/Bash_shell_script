@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#variables
+total_mem=cat /proc/meminfo
+
+echo= "$total_mem"

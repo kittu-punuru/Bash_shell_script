@@ -1,0 +1,14 @@
+#!/bin/bash
+#shell function example
+
+# here is a function fun 
+function fun {
+    echo "step 2"
+    return
+}
+
+# main program starts here
+
+echo "step 1"
+fun
+echo "step 3"
